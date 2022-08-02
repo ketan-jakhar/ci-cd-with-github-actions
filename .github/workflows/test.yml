@@ -20,3 +20,8 @@ jobs:
         run: npm run deploy
       - name: Setup finished successfully
         run: echo "hurrayyyy!!!!"
+  test-app:
+    needs: build-app
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "YOLO"
